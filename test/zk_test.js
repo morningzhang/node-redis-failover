@@ -2,7 +2,7 @@ var zk = require('node-zookeeper-client');
 var CreateMode = zk.CreateMode;
 
 //var client = zk.createClient('0.0.0.0:2181');
-var client = zk.createClient('172.17.5.72:2381,172.17.5.73:2381,172.17.5.74:2381/pomelo');
+var client = zk.createClient('172.20.0.47:2381,172.20.0.48:2381,172.20.0.49:2381/pomelo');
 client.once('connected', function(e) {
   if (e) {return console.error(e);}
   console.log('connect');
